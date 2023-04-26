@@ -39,7 +39,7 @@ def check_sophosxg_version(section):
     version = section[0][0]
 
     summarytext = "Version: " + str(version)
-    summarydetails = "For Update Support Contact K&P Computer! \n\n E-Mail: hds@kpc.de \n\n 24/7 Helpdesk-Support: \n International: +800 4479 3300 \n Germany: +49 6122 7071 330 \n Austria: +43 1 525 1833 \n\n Web Germany: https://www.k>
+    summarydetails = "For Update Support Contact K&P Computer! \n\n E-Mail: hds@kpc.de \n\n 24/7 Helpdesk-Support: \n International: +800 4479 3300 \n Germany: +49 6122 7071 330 \n Austria: +43 1 525 1833 \n\n Web Germany: https://www.kpc.de \n Web Austria: https://www.kpc.at \n Web International: https://www.kpc.de/en"
 
     yield Result(
         state=State.OK,
