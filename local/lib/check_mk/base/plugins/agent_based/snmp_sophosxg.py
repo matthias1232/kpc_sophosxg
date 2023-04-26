@@ -25,7 +25,7 @@ register.snmp_section(
         oids=["3"],
     ),
     detect=all_of(
-        startswith(".1.3.6.1.2.1.1.1.0", 'HETZ'),
+        startswith(".1.3.6.1.2.1.1.2.0", ".1.3.6.1.4.1.2604.5"),
         exists(".1.3.6.1.4.1.2604.5.1.1.*"),
     ),
 )
