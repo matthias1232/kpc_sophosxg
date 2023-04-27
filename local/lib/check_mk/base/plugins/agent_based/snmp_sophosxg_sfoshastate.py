@@ -19,7 +19,7 @@ from .agent_based_api.v1 import (
 
 
 register.snmp_section(
-    name="sophosxg_sfoshastatus",
+    name="sophosxg_sfoshastate",
     fetch=SNMPTree(
         base=".1.3.6.1.4.1.2604.5.1.4",
         oids = [
@@ -33,11 +33,11 @@ register.snmp_section(
 )
 
 
-def discover_sophosxg_sfoshastatus(section):
+def discover_sophosxg_sfoshastate(section):
     yield Service()
 
 
-def check_sophosxg_sfoshastatus(section):
+def check_sophosxg_sfoshastate(section):
     hastate = section[0][0]
     hastatename = "Unknown"
 
@@ -60,8 +60,8 @@ def check_sophosxg_sfoshastatus(section):
         details = summarydetails )
 
 register.check_plugin(
-    name="sophosxg_sfoshastatus",
+    name="sophosxg_sfoshastate",
     service_name="HA State",
-    discovery_function=discover_sophosxg_sfoshastatus,
-    check_function=check_sophosxg_sfoshastatus,
+    discovery_function=discover_sophosxg_sfoshastate,
+    check_function=check_sophosxg_sfoshastate,
 )
