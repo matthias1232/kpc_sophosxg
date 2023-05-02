@@ -6,6 +6,7 @@
 SNMP Check for Sophos XG/XGS Firewalls:
 
 Check:
+
 -Licenses
 
 -Services
