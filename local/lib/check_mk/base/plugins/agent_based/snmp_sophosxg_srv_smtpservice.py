@@ -1,5 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+################################################################################################################
+#
+# Author: K&P Computer Service- und Vertriebs-GmbH
+# Author: Matthias Binder
+# License: GNU General Public License
+# Date: 05/2023
+#
+# 
+# For Support and Sales Please Contact K&P Computer!
+#
+# E-Mail: hds@kpc.de
+#
+# 24/7 Helpdesk-Support:
+# International: +800 4479 3300
+# Germany: +49 6122 7071 330
+# Austria: +43 1 525 1833
+#
+# Web Germany: https://www.kpc.de
+# Web Austria: https://www.kpc.at
+# Web International: https://www.kpc.de/en
+#
+################################################################################################################
 import time
 
 from .agent_based_api.v1 import (
@@ -68,7 +90,7 @@ def check_sophosxg_srv_smtpservice(section):
 
     yield Result(
         state=state,
-        summary=f"{summarytext} (Check Details if you need Help)",
+        summary=f"{summarytext}",
         details = summarydetails )
 
 register.check_plugin(

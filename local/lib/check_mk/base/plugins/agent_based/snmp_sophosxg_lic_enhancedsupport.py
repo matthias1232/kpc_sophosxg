@@ -1,5 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+################################################################################################################
+#
+# Author: K&P Computer Service- und Vertriebs-GmbH
+# Author: Matthias Binder
+# License: GNU General Public License
+# Date: 05/2023
+#
+# 
+# For Support and Sales Please Contact K&P Computer!
+#
+# E-Mail: hds@kpc.de
+#
+# 24/7 Helpdesk-Support:
+# International: +800 4479 3300
+# Germany: +49 6122 7071 330
+# Austria: +43 1 525 1833
+#
+# Web Germany: https://www.kpc.de
+# Web Austria: https://www.kpc.at
+# Web International: https://www.kpc.de/en
+#
+################################################################################################################
 import time
 
 from .agent_based_api.v1 import (
@@ -127,6 +149,7 @@ def check_sophosxg_lic_enhancedsupport(params, section):
         summarydetails = "For Support und Sales Please Contact K&P Computer! \n\n E-Mail: hds@kpc.de \n\n 24/7 Helpdesk-Support: \n International: +800 4479 3300 \n Germany: +49 6122 7071 330 \n Austria: +43 1 525 1833 \n\n Web Germany: https://www.kpc.de \n Web Austria: https://www.kpc.at \n Web International: https://www.kpc.de/en"
             
     if licstate == "3" or licstate == "4":
+        state = State.OK
         if licstate == "4":
             state = State.CRIT
         if datedifference_days <= crit:
