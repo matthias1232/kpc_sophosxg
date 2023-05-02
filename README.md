@@ -4,8 +4,6 @@
 ![image](https://user-images.githubusercontent.com/5358267/235710289-c05aa5bb-3394-4c94-8ce0-1f0ef5382d00.png)
 
 
-# Sophos XG/XGS Check for CheckMK
-
 SNMP Check for Sophos XG/XGS Firewalls:
 
 Check:
