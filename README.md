@@ -1,4 +1,4 @@
-# Sophos XG Check fpr CheckMK
+# Sophos XG Check for CheckMK
 #Powered by K&P Computer - www.kpc.de
 
  Sophos XG Checks for CheckMK
