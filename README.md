@@ -1,7 +1,7 @@
 # Sophos XG Check for CheckMK
 #Powered by K&P Computer - www.kpc.de
 
-![image](https://user-images.githubusercontent.com/5358267/235710177-e3c4d225-8d7d-467e-8ad2-5c0e996fc6bc.png)
+![image](https://user-images.githubusercontent.com/5358267/235710289-c05aa5bb-3394-4c94-8ce0-1f0ef5382d00.png)
 
 
  Sophos XG Checks for CheckMK
