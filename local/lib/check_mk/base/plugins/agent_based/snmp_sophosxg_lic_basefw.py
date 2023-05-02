@@ -78,11 +78,11 @@ def check_sophosxg_lic_basefw(params, section):
          datedifference = date - datetime.now()
          datedifference_days = int(datedifference.days)
     else:
-         datedifference_days = "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+         datedifference_days = "9999999999"
 
 
 
-    
+    #Testing
     #datedifference_days = 25
 
     if licstate == "0":
@@ -122,8 +122,12 @@ def check_sophosxg_lic_basefw(params, section):
             state = State.WARN
         if unlicensed == "OK":
             state = State.OK
+        summarytext = "License: " + str(licstatename)
+        summarydetails = "For Support und Sales Please Contact K&P Computer! \n\n E-Mail: hds@kpc.de \n\n 24/7 Helpdesk-Support: \n International: +800 4479 3300 \n Germany: +49 6122 7071 330 \n Austria: +43 1 525 1833 \n\n Web Germany: https://www.kpc.de \n Web Austria: https://www.kpc.at \n Web International: https://www.kpc.de/en"
             
     if licstate == "3" or licstate == "4":
+        if licstate == "4":
+            state = State.CRIT
         if datedifference_days <= crit:
             state = State.CRIT
             summarytext = "License: " + str(licstatename) + ", Expire Date: " + str(licexpirename) + " (" + str(datedifference_days) + " days left)" 
@@ -161,8 +165,6 @@ def check_sophosxg_lic_basefw(params, section):
                 state = State.OK
             summarytext = "License: " + str(licstatename) + ", Expire Date: " + str(licexpirename) + " (" + str(datedifference_days) + " days left)" 
             summarydetails = "For Support und Sales Please Contact K&P Computer! \n\n E-Mail: hds@kpc.de \n\n 24/7 Helpdesk-Support: \n International: +800 4479 3300 \n Germany: +49 6122 7071 330 \n Austria: +43 1 525 1833 \n\n Web Germany: https://www.kpc.de \n Web Austria: https://www.kpc.at \n Web International: https://www.kpc.de/en" 
-    
-    
     
     if licstatename == "Unknown" or licexpirename == "Unknown" :
         state = State.CRIT

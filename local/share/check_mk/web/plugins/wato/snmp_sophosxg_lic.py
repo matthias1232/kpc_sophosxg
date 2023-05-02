@@ -75,58 +75,267 @@ def _parameter_valuespec_snmp_sophosxg_lic():
                         ],
                         default_value = "CRIT",
                     ),
-                ],
-                
+                ], 
             )),
             ("warning_central_orchestration", Tuple(
                 title=_("Central Orchestration"),
                 elements=[
                     Integer(title=_("Warning when License expires in under X days"), default_value=40),
                     Integer(title=_("Critical when License expires in under X days"), default_value=30),
-                ],
+                    DropdownChoice(
+                        title = _("State if Product ist not Licenced"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product has only an Evaluation License installed"),
+                        help = _('default is WARN'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "WARN",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product is Deactivated"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
+                ], 
             )),  
             ("warning_email_protection", Tuple(
                 title=_("Email Protection"),
                 elements=[
                     Integer(title=_("Warning when License expires in under X days"), default_value=40),
                     Integer(title=_("Critical when License expires in under X days"), default_value=30),
+                    DropdownChoice(
+                        title = _("State if Product ist not Licenced"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product has only an Evaluation License installed"),
+                        help = _('default is WARN'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "WARN",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product is Deactivated"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
                 ],
-            )),  
+            )),
             ("warning_enhanced_plus_support", Tuple(
                 title=_("Enhanced Plus Support"),
                 elements=[
                     Integer(title=_("Warning when License expires in under X days"), default_value=40),
                     Integer(title=_("Critical when License expires in under X days"), default_value=30),
+                    DropdownChoice(
+                        title = _("State if Product ist not Licenced"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product has only an Evaluation License installed"),
+                        help = _('default is WARN'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "WARN",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product is Deactivated"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
                 ],
-            )),  
+            )),
             ("warning_enhanced_support", Tuple(
                 title=_("Enhanced Support"),
                 elements=[
                     Integer(title=_("Warning when License expires in under X days"), default_value=40),
                     Integer(title=_("Critical when License expires in under X days"), default_value=30),
-                ],
-            )),  
+                    DropdownChoice(
+                        title = _("State if Product ist not Licenced"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product has only an Evaluation License installed"),
+                        help = _('default is WARN'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "WARN",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product is Deactivated"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
+                ], 
+            )),
             ("warning_network_protection", Tuple(
                 title=_("Network Protection"),
                 elements=[
                     Integer(title=_("Warning when License expires in under X days"), default_value=40),
                     Integer(title=_("Critical when License expires in under X days"), default_value=30),
+                    DropdownChoice(
+                        title = _("State if Product ist not Licenced"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product has only an Evaluation License installed"),
+                        help = _('default is WARN'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "WARN",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product is Deactivated"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
                 ],
-            )),  
+            )),
             ("warning_web_rotection", Tuple(
                 title=_("Web Protection"),
                 elements=[
                     Integer(title=_("Warning when License expires in under X days"), default_value=40),
                     Integer(title=_("Critical when License expires in under X days"), default_value=30),
+                    DropdownChoice(
+                        title = _("State if Product ist not Licenced"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product has only an Evaluation License installed"),
+                        help = _('default is WARN'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "WARN",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product is Deactivated"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
                 ],
-            )),  
+            )), 
             ("warning_web_Server_rotection", Tuple(
                 title=_("Web Server Protection"),
                 elements=[
                     Integer(title=_("Warning when License expires in under X days"), default_value=40),
                     Integer(title=_("Critical when License expires in under X days"), default_value=30),
+                    DropdownChoice(
+                        title = _("State if Product ist not Licenced"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product has only an Evaluation License installed"),
+                        help = _('default is WARN'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "WARN",
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product is Deactivated"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
                 ],
-            )),  
+            )),
             ("warning_zero_day_protection", Tuple(
                 title=_("Zero-Day Protection"),
                 elements=[
@@ -151,10 +360,19 @@ def _parameter_valuespec_snmp_sophosxg_lic():
                             ( "OK", _("OK") ),                            
                         ],
                         default_value = "WARN",
-                    )                  
+                    ),
+                    DropdownChoice(
+                        title = _("State if Product is Deactivated"),
+                        help = _('default is CRIT'),
+                        choices = [
+                            ( "CRIT",  _("CRIT") ),
+                            ( "WARN", _("WARN") ),
+                            ( "OK", _("OK") ),                            
+                        ],
+                        default_value = "CRIT",
+                    ),
                 ],
-                
-            )),         
+            )),       
         ],
     )
    
