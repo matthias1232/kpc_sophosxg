@@ -22,6 +22,9 @@ Licenses:
 
 ![image](https://user-images.githubusercontent.com/5358267/235709221-a88f909e-104d-4b9c-b85b-68c4e1658a60.png)
 
+![image](https://user-images.githubusercontent.com/5358267/235711040-2170c209-64bd-4e97-b4cd-2b5902e8994f.png)
+
+
 HA State:
 
 ![image](https://user-images.githubusercontent.com/5358267/235709307-879826ff-a86c-4146-9be0-c4aba39c68f4.png)
