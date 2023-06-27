@@ -14,7 +14,6 @@ Check:
 
 - HA State
 
-Screenhots:
 
 Licenses:
 
