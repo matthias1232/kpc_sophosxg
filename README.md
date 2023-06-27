@@ -5,9 +5,6 @@
 
 ----------------------
 
-
-### SNMP Check for Sophos XG/XGS Firewalls ###
-----------------------
 **- Licenses:**
 
 ![image](https://user-images.githubusercontent.com/5358267/235709221-a88f909e-104d-4b9c-b85b-68c4e1658a60.png)
