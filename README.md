@@ -9,6 +9,10 @@
 
 https://github.com/matthias1232/kpc_sophosxg/releases
 
+### Alternative you can use the official CheckMK Exchange: ###
+
+https://exchange.checkmk.com/p/kpc-sophosxg
+
 ----------------------
 **- Licenses:**
 
