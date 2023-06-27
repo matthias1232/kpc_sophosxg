@@ -5,7 +5,7 @@
 
 ----------------------
 
-### Available .mkp Packages: ###
+### Available .mkp Package Releases: ###
 
 https://github.com/matthias1232/kpc_sophosxg/releases
 
