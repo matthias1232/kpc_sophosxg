@@ -2,8 +2,12 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/5358267/235710289-c05aa5bb-3394-4c94-8ce0-1f0ef5382d00.png"></p>
 <p align="center">#Powered by K&P Computer - www.kpc.de</o>
 
-SNMP Check for Sophos XG/XGS Firewalls:
 
+----------------------
+
+
+### SNMP Check for Sophos XG/XGS Firewalls ###
+----------------------
 **- Licenses:**
 
 ![image](https://user-images.githubusercontent.com/5358267/235709221-a88f909e-104d-4b9c-b85b-68c4e1658a60.png)
