@@ -8,13 +8,13 @@ SNMP Check for Sophos XG/XGS Firewalls:
 
 Check:
 
--Licenses
+- Licenses
 
--Services
+- Services
 
--Show Device Info including Firmware Version
+- Show Device Info including Firmware Version
 
--HA State
+- HA State
 
 Screenhots:
 
