@@ -45,7 +45,14 @@ register.snmp_section(
     fetch=SNMPTree(
         base=".1.3.6.1.4.1.2604.5.1.4",
         oids = [
+        "1",
+        "2",
+        "3",
         "4",
+        "5",
+        "6",
+        "7",
+        "8",
         ],
     ),
     detect=all_of(
@@ -61,6 +68,7 @@ def discover_sophosxg_sfoscurrenthastate(section):
 
 def check_sophosxg_sfoscurrenthastate(section):
     hastate = section[0][0]
+    currentappkey = section[0][1]
     hastatename = "Unknown"
 
     if hastate == "0":
@@ -82,7 +90,7 @@ def check_sophosxg_sfoscurrenthastate(section):
     else:
         state=State.CRIT
 
-    summarytext = "HA Current Device  State: " + str(hastatename) 
+    summarytext = "HA Current Device  State: " + str(hastatename) + ", HA Current App Key: " + str(currentappkey)
     summarydetails = "For Support and Sales Please Contact K&P Computer! \n\n E-Mail: hds@kpc.de \n\n 24/7 Helpdesk-Support: \n International: +800 4479 3300 \n Germany: +49 6122 7071 330 \n Austria: +43 1 525 1833 \n\n Web Germany: https://www.kpc.de \n Web Austria: https://www.kpc.at \n Web International: https://www.kpc.de/en"
 
     yield Result(

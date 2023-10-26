@@ -45,7 +45,14 @@ register.snmp_section(
     fetch=SNMPTree(
         base=".1.3.6.1.4.1.2604.5.1.4",
         oids = [
+        "1",
+        "2",
+        "3",
+        "4",
         "5",
+        "6",
+        "7",
+        "8",
         ],
     ),
     detect=all_of(
@@ -60,7 +67,10 @@ def discover_sophosxg_sfospeerhastate(section):
 
 
 def check_sophosxg_sfospeerhastate(section):
-    hastate = section[0][0]
+    print(section)
+    hastate = section[0][4]
+    peerappkey = section[0][2]
+    haconfigmode = section[0][5]
     hastatename = "Unknown"
 
     if hastate == "0":
@@ -82,7 +92,7 @@ def check_sophosxg_sfospeerhastate(section):
     else:
         state=State.CRIT
 
-    summarytext = "HA Peer Device State: " + str(hastatename) 
+    summarytext = "HA Peer Device State: " + str(hastatename) + ", HA Peer App Key: " + str(peerappkey) + ", HA Peer Device Config Mode: " + str(haconfigmode)
     summarydetails = "For Support and Sales Please Contact K&P Computer! \n\n E-Mail: hds@kpc.de \n\n 24/7 Helpdesk-Support: \n International: +800 4479 3300 \n Germany: +49 6122 7071 330 \n Austria: +43 1 525 1833 \n\n Web Germany: https://www.kpc.de \n Web Austria: https://www.kpc.at \n Web International: https://www.kpc.de/en"
 
     yield Result(

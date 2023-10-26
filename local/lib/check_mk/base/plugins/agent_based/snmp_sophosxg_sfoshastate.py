@@ -46,6 +46,13 @@ register.snmp_section(
         base=".1.3.6.1.4.1.2604.5.1.4",
         oids = [
         "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
         ],
     ),
     detect=all_of(
@@ -61,8 +68,16 @@ def discover_sophosxg_sfoshastate(section):
 
 def check_sophosxg_sfoshastate(section):
     hastate = section[0][0]
+    haloadbalancing = section[0][6]
+    haport = section[0][7]
     hastatename = "Unknown"
 
+    if haloadbalancing == "0":
+        haloadbalancing = "notapplicable"
+    if haloadbalancing == "1":
+        haloadbalancing = "loadBalanceOff"
+    if haloadbalancing == "2":
+        haloadbalancing = "loadBalanceOn"
     if hastate == "0":
         hastatename="Disabled"
     if hastate == "1":
@@ -73,7 +88,7 @@ def check_sophosxg_sfoshastate(section):
     else:
         state=State.CRIT
 
-    summarytext = "HA State: " + str(hastatename) 
+    summarytext = "HA State: " + str(hastatename) + ", HA Port: " + str(haport) + ", HA Load Balancing: " + str(haloadbalancing)
     summarydetails = "For Support and Sales Please Contact K&P Computer! \n\n E-Mail: hds@kpc.de \n\n 24/7 Helpdesk-Support: \n International: +800 4479 3300 \n Germany: +49 6122 7071 330 \n Austria: +43 1 525 1833 \n\n Web Germany: https://www.kpc.de \n Web Austria: https://www.kpc.at \n Web International: https://www.kpc.de/en"
 
     yield Result(
