@@ -26,7 +26,7 @@ https://exchange.checkmk.com/p/kpc-sophosxg
 
 **- HA State:**
 
-![image](https://user-images.githubusercontent.com/5358267/235709307-879826ff-a86c-4146-9be0-c4aba39c68f4.png)
+![image](https://github.com/matthias1232/kpc_sophosxg/assets/5358267/5d705bf6-0b9f-49aa-a00d-84296427d120)
 
 
 **- Device Infos (Firmware etc.):**
@@ -34,5 +34,7 @@ https://exchange.checkmk.com/p/kpc-sophosxg
 ![image](https://user-images.githubusercontent.com/5358267/235709498-73e9de54-357d-44c3-80c8-26d3b0a4c798.png)
 
 ![image](https://github.com/matthias1232/kpc_sophosxg/assets/5358267/fe2de5a6-7df2-4c5b-a001-25890fab50e9)
+
+![image](https://github.com/matthias1232/kpc_sophosxg/assets/5358267/81e53122-fa38-47d5-ae70-40c6fb0f706b)
 
 
