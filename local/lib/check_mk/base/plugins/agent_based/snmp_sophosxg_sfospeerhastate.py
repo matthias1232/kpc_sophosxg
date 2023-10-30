@@ -67,7 +67,6 @@ def discover_sophosxg_sfospeerhastate(section):
 
 
 def check_sophosxg_sfospeerhastate(section):
-    print(section)
     hastate = section[0][4]
     peerappkey = section[0][2]
     haconfigmode = section[0][5]
